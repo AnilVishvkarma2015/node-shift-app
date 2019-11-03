@@ -1,0 +1,25 @@
+{
+    "port": 4000,
+    "authenticationSecret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "MONGODB_URL": "mongodb+srv://student:student2019@mycluster-p7old.mongodb.net/snp",
+    "API_KEY" : "cd95d2ef11b60b22a133b461aa1cad71",
+    "MOVIE_HOST" : "https://api.themoviedb.org",
+    "logging": {
+        "appenders": {
+            "logger-file": {
+                "type": "file",
+                "filename": "logger.log",
+                "maxLogSize": 2000000
+            }
+        },
+        "categories": {
+            "default": {
+                "appenders": [
+                    "logger-file"
+                ],
+                "level": "trace"
+            }
+        }
+    },
+    "tokenExpireInTime": 600
+}
